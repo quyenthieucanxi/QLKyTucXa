@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61275AB0-EAE7-412A-B754-9329453ABEDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLKyTucXa</RootNamespace>
+    <AssemblyName>QLKyTucXa</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectDatabase\Database.cs" />
+    <Compile Include="Controller\AdminDAO.cs" />
+    <Compile Include="Controller\KhuVucDAO.cs" />
+    <Compile Include="Controller\NguoiDungDAO.cs" />
+    <Compile Include="Controller\NhanVienDAO.cs" />
+    <Compile Include="Controller\SinhVienDAO.cs" />
+    <Compile Include="Models\AdminDTO.cs" />
+    <Compile Include="Models\ChiTietHoaDonDTO.cs" />
+    <Compile Include="Models\DangKyPhongDTO.cs" />
+    <Compile Include="Models\HoaDonDTO.cs" />
+    <Compile Include="Models\DiaChiDTO.cs" />
+    <Compile Include="Models\DichVuDTO.cs" />
+    <Compile Include="Models\KhuVucDTO.cs" />
+    <Compile Include="Models\LoaiPhongDTO.cs" />
+    <Compile Include="Models\NguoiDungDTO.cs" />
+    <Compile Include="Models\NhanVienDTO.cs" />
+    <Compile Include="Models\PhongDTO.cs" />
+    <Compile Include="Models\SinhVienDTO.cs" />
+    <Compile Include="Models\ThanhToanDTO.cs" />
+    <Compile Include="Models\ThanNhanDTO.cs" />
+    <Compile Include="Models\TruongDTO.cs" />
+    <Compile Include="View\Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Building.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Building.Designer.cs">
+      <DependentUpon>Building.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmloyeeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EmloyeeInfo.Designer.cs">
+      <DependentUpon>EmloyeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ListEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ListEmployees.Designer.cs">
+      <DependentUpon>ListEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ListStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ListStudent.Designer.cs">
+      <DependentUpon>ListStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RoomRegistration.Designer.cs">
+      <DependentUpon>RoomRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RoomType.Designer.cs">
+      <DependentUpon>RoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Service.Designer.cs">
+      <DependentUpon>Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ServiceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ServiceInfo.Designer.cs">
+      <DependentUpon>ServiceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StudentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StudentInfo.Designer.cs">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\ListEmployees.resx">
+      <DependentUpon>ListEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ListStudent.resx">
+      <DependentUpon>ListStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
